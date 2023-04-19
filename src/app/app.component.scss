@@ -1,0 +1,57 @@
+.main {
+  margin: 140px;
+}
+
+.main-title {
+  width: 660px;
+  padding-bottom: 60px;
+
+  h1 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 59px;
+  }
+}
+
+.tariff-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .tariff-item {
+    width: 360px;
+    height: 407px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .main {
+    margin: 58px 16px 10px;
+  }
+
+  .main-title {
+    width: 100%;
+    padding-bottom: 40px;
+
+    h1 {
+      font-size: 24px;
+      line-height: 30px;
+      width: 343px;
+    }
+  }
+
+  .tariff-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .tariff-item {
+      width: 100%;
+      height: 164px;
+      margin-bottom: 20px;
+      position: relative;
+    }
+  }
+}

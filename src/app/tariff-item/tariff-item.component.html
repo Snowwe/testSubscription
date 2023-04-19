@@ -1,0 +1,16 @@
+<div class="tariff-item">
+  <div class="period">{{ tariffItem.period }}</div>
+  <div class="title">{{ tariffItem.title }}</div>
+  <div class="price">
+    {{ tariffItem.price }}
+    <span class="old-price">{{ tariffItem.oldPrice }}</span>
+  </div>
+  <div class="period-price">{{ tariffItem.periodOfPrice }}</div>
+  <button class="button-title">{{ tariffItem.buttonTitle }}</button>
+  <div class="discount-description">
+    <span *ngIf="tariffItem.discount" class="discount">
+      {{ tariffItem.discount }}
+    </span>
+    <span class="description">{{ tariffItem.description }}</span>
+  </div>
+</div>

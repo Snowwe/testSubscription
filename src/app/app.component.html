@@ -1,0 +1,10 @@
+<main class="main">
+  <header class="main-title">
+    <h1>{{ mainTitle }}</h1>
+  </header>
+  <div class="tariff-list">
+    <ng-container *ngFor="let item of tariffList">
+      <app-tariff-item [tariffItem]="item" class="tariff-item"></app-tariff-item
+    ></ng-container>
+  </div>
+</main>

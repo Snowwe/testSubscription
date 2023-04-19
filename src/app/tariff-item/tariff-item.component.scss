@@ -1,0 +1,189 @@
+@import "../consts/colors";
+
+.tariff-item {
+  font-family: "Montserrat";
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 327px;
+  padding: 40px;
+  background: $background;
+  box-shadow: 0px 0px 15px rgba(104, 128, 155, 0.15);
+  border-radius: 15px;
+  color: $black;
+
+  &:hover {
+    background: $background-hover;
+  }
+}
+
+.period {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 10px;
+}
+
+.title {
+  height: 90px;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.price {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  margin-bottom: 7px;
+}
+
+.old-price {
+  font-size: 20px;
+  line-height: 24px;
+  text-decoration-line: line-through;
+  color: $gray-1;
+}
+
+.period-price {
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+.button-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  padding: 16px 40px;
+  gap: 10px;
+  width: 280px;
+  height: 52px;
+  background: $white;
+  border-radius: 50px;
+  border-width: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.discount-description {
+  margin: 10px auto 0;
+}
+
+.discount {
+  display: none;
+}
+
+.description {
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  align-self: center;
+  color: $gray-1;
+  margin-top: 10px;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 575px) {
+  .tariff-item {
+    height: 124px;
+    padding: 20px;
+    border-radius: 10px;
+    color: $black;
+  }
+
+  .period {
+    display: none;
+  }
+
+  .title {
+    font-size: 14px;
+    line-height: 20px;
+    height: 40px;
+    margin-bottom: 15px;
+  }
+
+  .price {
+    font-size: 32px;
+    line-height: 39px;
+    margin-bottom: 0;
+  }
+
+  .old-price {
+    font-size: 10px;
+    line-height: 17px;
+  }
+
+  .period-price {
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 17px;
+  }
+
+  .button-title {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 40px;
+    top: 40%;
+    padding: 0;
+    color: transparent;
+
+    &:after {
+      position: absolute;
+      top: 15px;
+      left: 13px;
+      content: "";
+      display: block;
+      width: 7px;
+      height: 7px;
+      border-left: 2px solid $black;
+      border-bottom: 2px solid $black;
+      transform: rotate(225deg);
+    }
+  }
+
+  .discount-description {
+    display: flex;
+    margin: 0;
+  }
+
+  .discount {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 40px;
+    height: 18px;
+    padding: 2px 7px;
+    margin-right: 6px;
+    gap: 10px;
+    background: $white;
+    border-radius: 23px;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 140%;
+  }
+
+  .description {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 16px;
+    padding: 2px 7px;
+    gap: 10px;
+    font-size: 10px;
+    line-height: 20px;
+    border: 1px solid $gray-1;
+    border-radius: 23px;
+    margin-top: 0;
+    text-align: left;
+    align-self: self-start;
+  }
+}
